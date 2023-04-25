@@ -16,7 +16,7 @@ const SurahController = {
       const ayahOfSurah = ayahs.filter((e) => e.surahId == req.params.number);
 
       if (req.query.ayah) {
-        const ayahSurah = ayahs.find((e) => e.number.inSurah == req.query.ayah);
+        const ayahSurah = ayahs.find((e) => e.number.inSurah == req.query.ayah && e.surahId == req.params.number);
         const surat = surahs.find((e) => e.number == ayahSurah.surahId);
 
         return res.status(200).json({
