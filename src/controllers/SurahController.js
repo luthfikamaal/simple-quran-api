@@ -5,12 +5,12 @@ const file2 = fs.readFileSync('./data/ayahs.json', 'utf-8');
 const surahs = JSON.parse(file);
 const ayahs = JSON.parse(file2);
 
-const SurahController = {
-  index: (req, res) => {
+class SurahController {
+  static index(req, res) {
     return res.status(200).json({ surahs });
-  },
+  }
 
-  show: (req, res) => {
+  static show(req, res) {
     try {
       const surah = surahs.find((e) => e.number == req.params.number);
       const ayahOfSurah = ayahs.filter((e) => e.surahId == req.params.number);
@@ -62,7 +62,7 @@ const SurahController = {
     } catch (error) {
       return res.status(404).json({ error: 'NOT FOUND' });
     }
-  },
-};
+  }
+}
 
 module.exports = SurahController;
