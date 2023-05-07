@@ -1,6 +1,6 @@
 # Simple Quran API
 
-This Quran API is sourced from the Ministry of Religious Affairs (Kemenag) and AlQuranCloud, collected in JSON format.
+API Quran ini bersumber dari Kemenag dan [api.alquran.cloud](https://api.alquran.cloud).
 
 ### Penggunaan Endpoint
 
