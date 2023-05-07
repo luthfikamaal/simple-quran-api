@@ -2,10 +2,10 @@
   "name": "quran-api",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+  "type": "commonjs",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js",
+    "strt": "node src/server.js",
     "dev": "nodemon src/server.js"
   },
   "keywords": [

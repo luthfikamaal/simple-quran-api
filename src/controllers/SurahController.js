@@ -1,4 +1,4 @@
-import fs from 'fs';
+const fs = require('fs');
 
 const file = fs.readFileSync('./data/surahs.json', 'utf-8');
 const file2 = fs.readFileSync('./data/ayahs.json', 'utf-8');
@@ -65,4 +65,4 @@ const SurahController = {
   },
 };
 
-export default SurahController;
+module.exports = SurahController;
