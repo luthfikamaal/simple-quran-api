@@ -1,9 +1,11 @@
 const fs = require('fs');
 
-const file = fs.readFileSync('./data/surahs.json', 'utf-8');
-const file2 = fs.readFileSync('./data/ayahs.json', 'utf-8');
-const surahs = JSON.parse(file);
-const ayahs = JSON.parse(file2);
+// const file = fs.readFileSync('../../data/surahs.json', 'utf-8');
+// const file2 = fs.readFileSync('../../data/ayahs.json', 'utf-8');
+// const surahs = JSON.parse(file);
+// const ayahs = JSON.parse(file2);
+const surahs = require('../../data/surahs.json');
+const ayahs = require('../../data/ayahs.json');
 
 class SurahController {
   static index(req, res) {
