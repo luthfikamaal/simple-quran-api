@@ -5,8 +5,8 @@ API Quran ini bersumber dari Kemenag dan [api.alquran.cloud](https://api.alquran
 ### Penggunaan Endpoint
 
 - `/api/surahs` memberikan response berupa seluruh data surat dalam Al-Quran.
-- `/api/surahs/{surahId}` menghasilkan response berupa data surah dan ayat-ayat di dalam surah tersebut. Sebagai contoh [/api/surahs/1](https://quran-api.vercel.app/api/surahs/1) akan menghasilkan sebuah object berisi data surah dan ayat-ayat Al-Fatihah.
-- `/api/surahs/{surahId}?ayah={number}` untuk menghasilkan response berupa data ayat pada surat tertentu. Sebagai contoh [/api/surahs/1?ayah=1](https://quran-api.vercel.app/api/surahs/1?ayah=1) akan menghasilkan sebuah object berisi data Al-Fatihah:1.
+- `/api/surahs/{surahId}` menghasilkan response berupa data surah dan ayat-ayat di dalam surah tersebut. Sebagai contoh [/api/surahs/1](https://quran-api-lk.vercel.app/api/surahs/1) akan menghasilkan sebuah object berisi data surah dan ayat-ayat Al-Fatihah.
+- `/api/surahs/{surahId}?ayah={number}` untuk menghasilkan response berupa data ayat pada surat tertentu. Sebagai contoh [/api/surahs/1?ayah=1](https://quran-api-lk.vercel.app/api/surahs/1?ayah=1) akan menghasilkan sebuah object berisi data Al-Fatihah:1.
 
 ### Sumber Data
 
